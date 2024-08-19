@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+   overflow-x: hidden;
+  /* font-family: 'Nunito', sans-serif; */
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensures navbar stays on top */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px; /* Adjust height as needed */
+  margin-right: 1rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1rem;
+  transition: color 300ms ease;
+}
+
+.nav-link:hover {
+  color: rgb(200, 200, 200);
+}
+
+/* Ensure sections are not hidden under the navbar */
+section {
+  padding-top: 5rem; /* Adjusted padding to account for the sticky navbar */
+}
+
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+#profile1{
+  border-radius: 50%;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  opacity: .92;
+  /* margin-bottom: 2rem; */
+
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  /* opacity: ; */
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  /* font-weight: normal; */
+}
+a .btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* width: 100%; */
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+  /* width: 80vw; */
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  margin: 4rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn:hover {
+  background: rgb(0, 0, 0);
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+.highlight{
+  font-weight: bolder;
+}
+
+
+/* theme */
+.dark-mode{
+  background-color: rgb(43, 43, 43);
+  color: aliceblue;
+}
+
+.whiteText{
+  color: aliceblue;
+}
+
+@media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+  
+    .about-containers {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    
+  
+    #profile,
+    .section-container {
+      display: block;
+    }
+  
+    .arrow {
+      display: none;
+    }
+  
+    section,
+    .section-container {
+      height: fit-content;
+    }
+  
+    section {
+      margin: 0 5%;
+    }
+  
+    .section__pic-container {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 2rem;
+    }
+  
+    .about-containers {
+      margin-top: 0;
+    }
+  
+    #aboutTitle {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    #profile {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+  
+    .about-containers,
+    .btn-container {
+      flex-wrap: wrap;
+  
+    }
+  
+    .section__pic-container {
+      width: auto;
+      height: 50vw;
+      justify-content: center;
+    }
+
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+  
+    .about {
+      margin-top: 5rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    #aboutTitle {
+      margin-bottom: 2rem;
+    }
+  
+    .text-container {
+      text-align: justify;
+      margin: none;
+      padding: 0;
+  
+    }
+  
+  }
